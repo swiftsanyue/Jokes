@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  Jokes
+//
+//  Created by qianfeng on 16/11/28.
+//  Copyright © 2016年 ZL. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+    //1.OC和UI库
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+    //2.cocoapods的第三方库
+    #import <AFNetworking/AFNetworking.h>
+    #import <Masonry/Masonry.h>
+    #import <MJRefresh/MJRefresh.h>
+    #import <SDWebImage/UIImageView+WebCache.h>
+    #import <ProgressHUD/ProgressHUD.h>
+
+    //3.自己定义的库
+    #import "Downloader.h"
+
+
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
